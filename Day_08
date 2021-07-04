@@ -1,0 +1,22 @@
+a=[]
+b={}
+for i in range(int(input())):
+    a= a + input().split(" ")
+i=0
+j=0
+while i != len(a):
+    b.update({a[j]:a[j+1]})
+    i=i+2
+    j=i
+    
+while(True):
+    try:
+        k = str(input().strip())            
+        if k != None:
+            if k in b:
+                print (k + '=' + str(b[k]))
+            else:
+                print ('Not found')
+    except EOFError:
+        break
+     
