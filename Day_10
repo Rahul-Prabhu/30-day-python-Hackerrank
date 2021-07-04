@@ -1,0 +1,26 @@
+n=int(input())
+a=0
+x=list()
+while n!=1:
+    a=n%2
+    n=n//2
+    x.append(a)
+else:
+    if n==1:
+        x.append(1)
+    else:
+        x.append(0)
+x.reverse()
+# print(x)
+ans=0
+count=0
+x.append(0)
+for i in x:
+    if i==1:
+        count=count+1
+    else:
+        if ans<count:
+            ans=count
+        count=0
+
+print(ans)
