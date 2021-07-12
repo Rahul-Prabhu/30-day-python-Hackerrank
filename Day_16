@@ -1,0 +1,7 @@
+import math
+import os
+try:
+    S=int(input())
+    print(S)
+except :
+    print("Bad String")
